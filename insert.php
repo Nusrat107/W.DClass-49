@@ -12,7 +12,7 @@ if (isset($_POST['submit'])){
     $address = $_POST['address'];
 
 
-    $query = "INSERT INTO students (name, roll, class,  address) VALUES ('$name', $roll, '$class', '$address')";
+    $query = "INSERT INTO students (name, roll, class,  address) VALUES ('$name', '$roll', '$class', '$address')";
 
     $insertData = mysqli_query($connection, $query);
 
